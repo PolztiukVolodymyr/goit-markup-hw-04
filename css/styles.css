@@ -27,6 +27,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 /* -------------HEADER --------- */
 
 .header {
@@ -91,9 +96,15 @@ ul {
 
 /* ----------LIST NAV------- */
 
+.link-nav {
+  display: flex;
+  align-items: center;
+}
+
 .link-nav:hover,
 .link-nav:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .list-contacts {
@@ -103,6 +114,11 @@ ul {
 
 .list-contacts .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.nav-icon {
+  /* fill: var(--primery-text-color); */
+  margin-right: 10px;
 }
 
 .link-nav {
@@ -212,7 +228,7 @@ button {
 
 /* --------Наши преимущества----- */
 
-.benefits {
+.section-benefits {
   padding-top: 94px;
 }
 
@@ -225,27 +241,21 @@ button {
   width: 270px;
 }
 
-.team {
+.picture {
+  width: 270px;
+  height: 120px;
   background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
-.section {
-  padding-bottom: 94px;
-  paddingn-top: 94px;
-}
-
-.section-title {
-  color: var(--title-text-color);
-
-  margin-bottom: 50px;
-  margin-top: 0px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+/* ::before {
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+} */
 
 .section-title-small {
   color: var(--title-text-color);
@@ -274,10 +284,11 @@ button {
   display: flex;
   justify-content: space-between;
 }
+
 /*------- Наша команда------- */
 
 .team {
-  padding-top: 94px;
+  background-color: #f5f4fa;
 }
 
 .item-team {
@@ -323,12 +334,56 @@ button {
   letter-spacing: 0.06em;
 }
 
+/*----- Постоянные клиенты------- */
+
+.client {
+  display: flex;
+}
+
+.client-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-list {
+  display: flex;
+}
+
+.client-icon {
+  fill: #afb1b8;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+
+  margin-bottom: 50px;
+  margin-top: 0px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 /* -------------PORTFOLIO------ */
 
 .list-button {
   display: flex;
   padding-bottom: 50px;
-  padding-top: 94px;
+
   justify-content: center;
 }
 
@@ -353,6 +408,9 @@ button {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.list-gallery:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
