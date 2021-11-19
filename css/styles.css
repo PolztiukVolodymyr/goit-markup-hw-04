@@ -118,7 +118,7 @@ ul {
 }
 
 .nav-icon {
-  /* fill: var(--primery-text-color); */
+  fill: currentColor;
   margin-right: 10px;
 }
 
